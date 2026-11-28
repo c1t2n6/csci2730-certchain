@@ -43,7 +43,7 @@ async function main() {
   // ---- Register issuing institutions ------------------------------------
   let institutions = parseInstitutionsEnv();
   if (institutions.length === 0) {
-    institutions = [{ address: deployer.address, name: "The Chinese University of Hong Kong" }];
+    institutions = [{ address: deployer.address, name: "CertChain Platform Administration" }];
     // On the local Hardhat chain also register a second university (account #1)
     // so the multi-institution features can be demonstrated.
     if (Number(chainId) === 31337 && signers[1]) {
